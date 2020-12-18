@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  smoothie-certbot:
+    container_name: smoothie-certbot-main
+    build:
+      context: .
+      target: CERT_CREATION
+    volumes:
+      - .data:/var/certbot/app

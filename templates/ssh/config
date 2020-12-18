@@ -1,0 +1,4 @@
+Host %SSH_HOST%
+    HostName %SSH_HOST_NAME%
+    IdentityFile ~/.ssh/id_rsa
+    User %SSH_USER%

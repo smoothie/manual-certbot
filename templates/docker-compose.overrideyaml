@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  smoothie-certbot:
+    container_name: smoothie-certbot-main
+    build:
+      args:
+        CERTBOT_DOMAIN: example.com
+        CERTBOT_EMAIL: hello@example.com
+#        HOST_GROUP_ID: 1000
+#        HOST_USER_ID: 1000
+        SSH_HOST: example
+        SSH_HOST_NAME: host.example.com
+        SSH_PUBLIC_DIRECTORY: /var/www/some-project/public
+        SSH_USER: name-to-login
